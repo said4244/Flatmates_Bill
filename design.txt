@@ -1,0 +1,27 @@
+Title = Flatmates bill
+
+Discribtion: An app that gets as input the amount of a bill for a particular period and 
+             the days that each flatmate stayed in the house for that period and returns
+             how much each flatmate should pay. It also generates a pdf report stating 
+             the names of the flatmates, the period and how much each of them had to pay
+
+All nouns of the discription: app, amount, bill, period, days, flatmate, house, pdf
+
+Now think of the objects that we really need to make a class of
+
+object 1: bill
+
+now think of possible attributes of bill out of the discription
+
+object 1: bill
+           |__amount
+           |__period
+
+object 2: flatmate
+             |__days_in_house
+             |__pays(needs to know what the bills are)
+             |__name
+
+object 3: Pdf_report
+              |__filename
+              |__generate_a_pdf(flatmate1, flatmate2, bill, other info)
